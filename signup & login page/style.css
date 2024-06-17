@@ -1,0 +1,66 @@
+@import url();
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        z-index: 1;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 3;
+    }
+
+    #sidemenu {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 1000vh;
+        padding-top: 3rem;
+        z-index: 2;
+        transition: 0.75s ease-out;
+        background-color:#ff004f;
+    }
+
+    #sidemenu li{
+        list-style: none;
+        margin-left: 1rem;
+        padding:0.5rem;
+    }
+
+    #sidemenu li a{
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+   
