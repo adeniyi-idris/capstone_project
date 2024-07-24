@@ -5,3 +5,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+
+#fname{
+    margin-right: 2rem;
+}
+
+#profileForm{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.1);
+}
+
+h2{
+    text-align: center;
+}
+
+input, textarea, button, select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border:  1px solid #ddd;
+    border-radius: 5px;
+}
+
+button{
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    background-color: #218838;
+}
+
+.profile-info{
+    margin-top: 20px;
+}
+
+.profile-info p{
+    margin: 5px 0;
+}

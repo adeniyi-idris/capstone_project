@@ -3,10 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <header>
+            <div class="logo">
+                <h3>Idris</h3>
+            </div>
+            
+            <nav class="nav-bar">
+                <ul id="sidemenu">
+                    <li class="nav-list"><a class="nav-items" href="#">Home</a></li>
+                    <li class="nav-list"><a class="nav-items" href="#">Abous us</a></li>
+                    <li class="nav-list"><a class="nav-items" href="#">Services</a></li>
+                    <li class="nav-list"><a class="nav-items" href="#">Pricing</a></li>
+                    <li class="nav-list"><a class="nav-items" href="#">Product pages</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+        </header>
+        <section class="dashboard">
+            <div class="sidemenu">
+
+                <ul class="aside">
+                    <div class="side1">
+                        <i class="fa-solid fa-border-all"></i>
+                        <li> All Business </li>
+                    </div>
+                    <div class="side2">
+                        <i class="fa-solid fa-plus"></i>
+                        <li>Create New Business </li>
+                    </div>
+                    
+                </ul>
+
+                <div>
+                    <button class="logout">Log out <i class="fa-solid fa-right-from-bracket"></i></button>
+                </div>
+                
+            </div>
+            <div class="main">
+                <button id="add-plan">Add Business Plan</button>
+                
+                <div id="plans-container"></div>
+            </div>
+
+        </section>
+        <div class="modal" id="plan-modal">
+            <div class="modal-content">
+                <input type="text" name="" id="plan-title" placeholder="Title" required>
+                <textarea name="" id="plan-description" placeholder="Description" rows="4" required></textarea>
+                <button id="savePlan">Save</button>
+                <button id="closePlan">Cancel</button>
+            </div>
+        </div>
+    </main>
+<script src="./index.js">
+
+const sidemenu = document.querySelector("#sidemenu")
+
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+        
+
+</script>
 </body>
 </html>

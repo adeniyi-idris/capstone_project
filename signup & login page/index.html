@@ -2,46 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <header>
-            <div class="logo">
-                <h3>Idris</h3>
+        <div class="pages">
+            
+            <div id="login-page">
+                <h2>Login</h2>
+                <h5 id="error">Inavlid Username or Password</h5>
+                <form action="" id="login-form">
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username" required>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" required>
+                  <a href="#" class="forgot-password">Forgot Password?</a>
+                  <div id="remember">
+                    <input type="checkbox" name="" id="rem">
+                    <label id="label">Remember Me</label>
+                  </div>
+                  <button type="submit" id="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="sign-up-dirc">Sign-up &#8594;</a></p>
             </div>
-            
-            <nav>
-                <ul id="sidemenu">
-                    <li class="nav-list"><a class="nav-items" href="#">Home</a></li>
-                    <li class="nav-list"><a class="nav-items" href="#">Abous us</a></li>
-                    <li class="nav-list"><a class="nav-items" href="#">Services</a></li>
-                    <li class="nav-list"><a class="nav-items" href="#">Contact us</a></li>
-                    <li class="nav-list"><a class="nav-items" href="#">Pricing</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            
-        </header>
+            <div id="sign-up-page">
+                <h2>Sign-up</h2>
+                <h5 id="warning"></h5>
+                <form action="" id="sign-up">
+                  <label for="newUsername">Username</label>
+                  <input type="text" name="newUsername" id="newUsername" required>
+                  <label for="passwords">Password</label>
+                  <input type="password" name="passwords" id="passwords" required>
+                  <label for="cpasswords">Confirm Password</label>
+                  <input type="password" name="cpasswords" id="cpasswords" required>
+                  <button type="submit" id="newSubmit">Submit</button>
+                </form>
+                <p>Already have an account? <a href="#" id="login-dirc">Login &#8594;</a></p>
+            </div>
+        </div>
     </main>
-<script>
-
-const sidemenu = document.querySelector("#sidemenu")
-
-
-function openmenu(){
-    sidemenu.style.right = "0";
-}
-
-function closemenu(){
-    sidemenu.style.right = "-200px";
-}
-        
-
-</script>
+    <script src="./index.js"></script>
 </body>
 </html>

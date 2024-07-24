@@ -7,6 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+        <h2>Create Profile</h2>
+    </div>
+    <form action="" id="profileForm">
+        <div class="name">
+            <input type="text" name="" id="fname" placeholder="First Name" required>
+            <input type="text" name="" id="lname" placeholder="Last Name" required>
+        </div>
+        <input type="text" name="" id="email" placeholder="Email" required>
+        <input type="tel" name="" id="number" placeholder="Phone Number" required>
+        <select name="" id="gender" aria-placeholder="Gender">
+            <option value="Gender">Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Bianry">Binary</option>
+        </select>
+        <input type="text" name="" id="address" placeholder="Address">
+        <textarea name="" id="bio" placeholder="Bio" rows="4"></textarea>
+        <input type="image" src="#" alt="">
+        <button type="submit">Submit</button>
+        
+    </form>
+    <div class="profile-info" id="profileInfo">
+        <h2>Profile Information</h2>
+        <p><strong>Name:</strong><span id="displayName"></span></p>
+        <p><strong>Email:</strong><span id="displayEmail"></span></p>
+        <p><strong>Bio:</strong><span id="displayBio"></span></p>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
