@@ -3,6 +3,7 @@ const planModal = document.getElementById('plan-modal')
 const addPlan = document.getElementById('add-plan')
 const savePlan = document.getElementById('savePlan')
 const closePlan = document.getElementById('closePlan')
+const logout = document.getElementById('logout')
 
 addPlan.addEventListener('click', openModal)
 closePlan.addEventListener('click', closeModal)

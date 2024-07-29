@@ -1,7 +1,7 @@
 const signUpDirc = document.getElementById("sign-up-dirc")
 const loginDirc = document.getElementById("login-dirc")
 const loginPage = document.getElementById("login-page")
-const signUpPage = document.getElementById("sign-up-page")
+const signUpPage = document.getElementById("signUpPage")
 
 
 
@@ -19,7 +19,7 @@ signUpDirc.addEventListener("click", displaySign)
 loginDirc.addEventListener("click", displayLog)
 
 
-const users = JSON.parse(localStorage.getItem('users')) || [
+let users = JSON.parse(localStorage.getItem('users')) || [
     {
         username: 'idris',
         password: '12345'
@@ -51,38 +51,35 @@ function userInfo(e){
         if(user){
             
             /*sessionStorage.setItem('loggedIn', 'true')*/ 
-            window.location.href = "../profile-page/index.html"
+            window.location.href = "../Dashboard/index.html"
         }else{
             error.style.display = "block"
         }    
 
 }
-/*
-if(sessionStorage.getItem('loggedIn') === 'true'){
-    window.location.href = "../profile-page/index.html"
-}*/
 
-const NewUser = document.getElementById('newUsername').value
-const NewPass = document.getElementById('passwords').value
-const warning = document.getElementById('warning')
-const NewSubmit  = document.getElementById('newSubmit')
 
-function signup(){
-    const exist = users.find(user => user.username === NewUser)
 
-    if(exist){
+function signup(e){
+    const username = document.getElementById('newUsername').value
+    const password = document.getElementById('passwords').value
+    const warning = document.getElementById('warning')
+    
+    e.preventDefault()
+    if(localStorage.getItem(username)){
         warning.textContent = 'Existing User'
     }else{
-        users.push({username: NewUser, password: NewPass})
+        users.push({username, password})
         localStorage.setItem('users', JSON.stringify(users))
 
+        //localStorage.setItem(username, password)
+
         window.location.href = "../profile-page/index.html"
-    }
-
-        
-
-        
+    } 
 
 }
 
-NewSubmit.addEventListener('click', signup)
+signUpPage.addEventListener('submit', signup)
+
+
+        

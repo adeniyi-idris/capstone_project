@@ -57,7 +57,7 @@ input, textarea, button, select{
 
 
 
-#login-page, #sign-up-page{
+#login-page, #signUpPage{
     max-width: 600px;
     margin: 50px 15rem;
     padding: 20px;
@@ -75,7 +75,7 @@ input, textarea, button, select{
     margin-top: 1rem;
 }
 
-#sign-up-page{
+#signUpPage{
     display: none;
 }
 
