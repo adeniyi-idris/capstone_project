@@ -74,7 +74,7 @@ function signup(e){
 
         //localStorage.setItem(username, password)
 
-        window.location.href = "../profile-page/index.html"
+        window.location.href = "../signup & login page/index.html"
     } 
 
 }

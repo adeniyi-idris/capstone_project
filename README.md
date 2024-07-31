@@ -19,3 +19,5 @@ This application is designed to empower users to effortlessly craft and showcase
 1) HTML
 2) CSS
 3) JAVASCRIPT
+
+https://adeniyi-idris.github.io/capstone_project/
