@@ -9,7 +9,8 @@
 
 .pages{
     width: 100%;
-    margin: 2rem 3rem
+    margin: 2rem 3rem;
+    margin: 0 auto;
 }
 
 label{
@@ -59,7 +60,7 @@ input, textarea, button, select{
 
 #login-page, #signUpPage{
     max-width: 600px;
-    margin: 50px 15rem;
+    margin: 50px auto;
     padding: 20px;
     background: #fff;
     border-radius: 10px;
@@ -79,6 +80,10 @@ input, textarea, button, select{
     display: none;
 }
 
+#signUpPage h2{
+    margin-bottom: 2rem;
+}
+
 
 #error{
     display: none;
@@ -89,18 +94,23 @@ input, textarea, button, select{
     align-self: end;
 }
 
+#login-dirc, #sign-up-dirc, .forgot-password{
+    text-decoration: none;
+    color: green;
+}
 
-@media screen and (max-width: 376px){
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    
-    
+h2{
+    color: green;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
     .pages{
-        width: 100%;
-        margin: 2rem 3rem
+        margin: 0 auto;
     }
     
     label{
@@ -149,13 +159,190 @@ input, textarea, button, select{
     
     
     #login-page, #signUpPage{
-        max-width: 600px;
+        max-width: 577px;
         margin: 50px 1rem;
         padding: 20px;
         background: #fff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0 ,0.1);
         align-items: center;
+    }
+    
+    #login-page h2{
+        margin-bottom: 2rem;
+    }
+    
+    #login-page p {
+        margin-top: 1rem;
+    }
+    
+    #signUpPage{
+        display: none;
+    }
+    
+    
+    #error{
+        display: none;
+        color: red;
+    }
+    
+    .forgot-password{
+        align-self: end;
+    }
+}
+
+
+@media screen and (max-width: 579px){
+    .pages{
+        margin: 0 auto;
+    }
+    
+    label{
+        display: block;
+        margin-bottom: 0.3rem;
+    }
+    
+    input{
+        display: block;
+        margin-bottom: 1rem;
+        padding: 0.3rem 1rem;
+        width: 100%;
+    }
+    
+    input:focus{
+        border: rgb(166, 166, 248);
+    }
+    
+    button{
+        color: #fff;
+        background-color: green;
+    }
+    
+    input, textarea, button, select{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border:  1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    #remember{
+        display: flex;
+        align-items: center;
+    }
+    
+    #label{
+        margin-bottom: 0rem;
+    }
+    
+    #rem{
+        display: inline-block;
+        width: 5%;
+    }
+    
+    
+    
+    #login-page, #signUpPage{
+        max-width: 577px;
+        margin: 50px 1rem;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0 ,0.1);
+        align-items: center;
+    }
+    
+    #login-page h2{
+        margin-bottom: 2rem;
+    }
+    
+    #login-page p {
+        margin-top: 1rem;
+    }
+    
+    #signUpPage{
+        display: none;
+    }
+    
+    
+    #error{
+        display: none;
+        color: red;
+    }
+    
+    .forgot-password{
+        align-self: end;
+    }
+}
+
+
+@media screen and (max-width: 376px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    
+    
+    .pages{
+        margin: 0 auto;
+    }
+    
+    label{
+        display: block;
+        margin-bottom: 0.3rem;
+    }
+    
+    input{
+        display: block;
+        margin-bottom: 1rem;
+        padding: 0.3rem 1rem;
+        width: 100%;
+    }
+    
+    input:focus{
+        border: rgb(166, 166, 248);
+    }
+    
+    button{
+        color: #fff;
+        background-color: green;
+    }
+    
+    input, textarea, button, select{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border:  1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    #remember{
+        display: flex;
+        align-items: center;
+    }
+    
+    #label{
+        margin-bottom: 0rem;
+    }
+    
+    #rem{
+        display: inline-block;
+        width: 5%;
+    }
+    
+    
+    
+    #login-page, #signUpPage{
+        
+        margin: 50px 1rem;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0 ,0.1);
+        align-items: center;
+        overflow: hidden;
     }
     
     #login-page h2{

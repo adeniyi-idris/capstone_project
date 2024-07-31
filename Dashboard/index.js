@@ -59,6 +59,59 @@ function display(){
 
 display()
 
+document.addEventListener('DOMContentLoaded', function(){
+    const username = sessionStorage.getItem('username')
+    if(username){
+        const users = JSON.parse(localStorage.getItem('users')) || []
+        const user = users.find(user => user.username === username)
+        if(user){
+            document.getElementById('logo').textContent = user.username
+        }else{
+            window.location.href='../signup & login page/index.html'
+        }
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="header">
         <h2>Create Profile</h2>
     </div>
     <form action="" id="profileForm">
@@ -25,16 +25,14 @@
         </select>
         <input type="text" name="" id="address" placeholder="Address">
         <textarea name="" id="bio" placeholder="Bio" rows="4"></textarea>
-        <input type="image" src="#" alt="">
+        <div>
+            <label for="iu">Upload Image</label>
+            <input type="file" id="iu" accept="image/*">
+        </div>
         <button type="submit">Submit</button>
         
     </form>
-    <div class="profile-info" id="profileInfo">
-        <h2>Profile Information</h2>
-        <p><strong>Name:</strong><span id="displayName"></span></p>
-        <p><strong>Email:</strong><span id="displayEmail"></span></p>
-        <p><strong>Bio:</strong><span id="displayBio"></span></p>
-    </div>
+    
     <script src="./index.js"></script>
 </body>
 </html>
